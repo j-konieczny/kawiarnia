@@ -1,0 +1,36 @@
+.gallery {
+    list-style: none;
+    padding-left: 0;  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* w każdym wierszu trzy równe kolumny */
+    grid-gap: 20px;
+}
+
+@media(max-width: 767px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.gallery__aspect-ratio {
+    padding-top: calc(100% * 9 / 16); /*na ile % obrazek ma być wysoki względem szerokości */
+    position: relative;
+}
+
+.gallery__image {
+    
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    object-fit: cover;
+    
+
+
+}
+
+.gallery__image:hover {
+    transform: scale(1.1);
+    transition-duration: 0.8s;
+}
