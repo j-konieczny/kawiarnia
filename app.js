@@ -2,30 +2,34 @@ const menu = [
   {
     id: 1,
     title: "Espresso",
+    pojemnosc: "20ml / 40ml",
     category: "Kawa",
-    price: 15.99,
+    price: "8 / 10",
     img: "images/espresso.jpg",
     desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
   },
   {
     id: 2,
     title: "Americano",
+    pojemnosc: "200ml / 300ml",
     category: "Kawa",
-    price: 13.99,
+    price: "10 / 12",
     img: "images/1.jpg",
     desc: `vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats `,
   },
   {
     id: 3,
-    title: "Drip v60 200/300ml",
+    title: "Drip v60",
+    pojemnosc: "200ml / 400ml",
     category: "Kawa",
-    price: 6.99,
+    price: "10 / 12",
     img: "images/3.jpg",
     desc: `ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.`,
   },
   {
     id: 4,
-    title: "Chemex 440ml",
+    title: "Chemex",
+    pojemnosc: "440ml",
     category: "Kawa",
     price: 20.99,
     img: "./images/2.jpg",
@@ -34,22 +38,25 @@ const menu = [
   {
     id: 5,
     title: "Latte",
+    pojemnosc: "250ml / 350ml",
     category: "Kawa",
-    price: 22.99,
+    price: "10 / 12",
     img: "./images/9.jpg",
     desc: `franzen vegan pabst bicycle rights kickstarter pinterest meditation farm-to-table 90's pop-up `,
   },
   {
     id: 6,
     title: "Cappuccino",
+    pojemnosc: "200ml / 300ml",
     category: "Kawa",
-    price: 18.99,
+    price: "10 / 12",
     img: "./images/8.jpg",
     desc: `Portland chicharrones ethical edison bulb, palo santo craft beer chia heirloom iPhone everyday`,
   },
   {
     id: 7,
     title: "Jajecznica",
+    pojemnosc: "",
     category: "Śniadania",
     price: 8.99,
     img: "./images/jajka.jpg",
@@ -58,6 +65,7 @@ const menu = [
   {
     id: 8,
     title: "Owsianka",
+    pojemnosc: "",
     category: "Śniadania",
     price: 12.99,
     img: "./images/owsianka.jpg",
@@ -66,6 +74,7 @@ const menu = [
   {
     id: 9,
     title: "Pancakes",
+    pojemnosc: "",
     category: "Śniadania",
     price: 16.99,
     img: "./images/pancake.jpg",
@@ -74,6 +83,7 @@ const menu = [
   {
     id: 10,
     title: "Sałatka",
+    pojemnosc: "",
     category: "Lunch",
     price: 22.99,
     img: "./images/salatka.jpg",
@@ -82,6 +92,7 @@ const menu = [
   {
     id: 11,
     title: "Bowl",
+    pojemnosc: "",
     category: "Lunch",
     price: 22.99,
     img: "./images/bowl.jpg",
@@ -90,6 +101,7 @@ const menu = [
   {
     id: 12,
     title: "Burger",
+    pojemnosc: "",
     category: "Lunch",
     price: 22.99,
     img: "./images/burger.jpg",
@@ -98,6 +110,7 @@ const menu = [
   {
     id: 13,
     title: "Tosty",
+    pojemnosc: "",
     category: "Śniadania",
     price: 22.99,
     img: "./images/tosty.jpg",
@@ -106,6 +119,7 @@ const menu = [
   {
     id: 14,
     title: "Muffinka",
+    pojemnosc: "",
     category: "Desery",
     price: 22.99,
     img: "./images/muffin.jpg",
@@ -114,6 +128,7 @@ const menu = [
   {
     id: 15,
     title: "Sernik",
+    pojemnosc: "",
     category: "Desery",
     price: 22.99,
     img: "./images/sernik.jpg",
@@ -122,6 +137,7 @@ const menu = [
   {
     id: 16,
     title: "Brownie",
+    pojemnosc: "",
     category: "Desery",
     price: 22.99,
     img: "./images/brownie.jpg",
@@ -129,56 +145,7 @@ const menu = [
   },
 ];
 
-// const kawy = [
-//   {
-//     id: 1,
-//     title: "Espresso",
-//     category: "Kawa",
-//     price: 15.99,
-//     img: "images/espresso.jpg",
-//     desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
-//   },
-//   {
-//     id: 2,
-//     title: "Americano",
-//     category: "Kawa",
-//     price: 13.99,
-//     img: "images/1.jpg",
-//     desc: `vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats `,
-//   },
-//   {
-//     id: 3,
-//     title: "Drip v60 200/300ml",
-//     category: "Kawa",
-//     price: 6.99,
-//     img: "images/3.jpg",
-//     desc: `ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.`,
-//   },
-//   {
-//     id: 4,
-//     title: "Chemex 440ml",
-//     category: "Kawa",
-//     price: 20.99,
-//     img: "./images/2.jpg",
-//     desc: `Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut, `,
-//   },
-//   {
-//     id: 5,
-//     title: "Latte",
-//     category: "Kawa",
-//     price: 22.99,
-//     img: "./images/9.jpg",
-//     desc: `franzen vegan pabst bicycle rights kickstarter pinterest meditation farm-to-table 90's pop-up `,
-//   },
-//   {
-//     id: 6,
-//     title: "Cappuccino",
-//     category: "Kawa",
-//     price: 18.99,
-//     img: "./images/8.jpg",
-//     desc: `Portland chicharrones ethical edison bulb, palo santo craft beer chia heirloom iPhone everyday`,
-//   },
-// ];
+
 // get parent element
 const sectionCenter = document.querySelector(".section-center");
 const btnContainer = document.querySelector(".btn-container");
@@ -196,8 +163,9 @@ function diplayMenuItems(menuItems) {
           <img src=${item.img} alt=${item.title} class="photo" />
           <div class="item-info">
             <header>
-              <h4>${item.title}</h4>
-              <h4 class="price">$${item.price}</h4>
+              <h4>${item.title} <h4 class="pojemnosc">${item.pojemnosc}</h4></h4>
+              
+              <h4 class="price">${item.price}</h4>
             </header>
             <p class="item-text">
               ${item.desc}
